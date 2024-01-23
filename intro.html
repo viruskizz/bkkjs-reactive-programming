@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Introduction Reactive Programing</title>
+	<script src="https://cdn.jsdelivr.net/npm/rxjs@7.8.1/dist/bundles/rxjs.umd.min.js"></script>
+</head>
+<body>
+	<script>
+	const { fromEvent, throttleTime, scan, tap, take, finalize, catchError, EMPTY } = rxjs;
+	fromEvent(document, 'click')
+		.pipe(
+			throttleTime(1000),
+			scan((count) => count + 1, 0),
+			tap((count) => {
+				if (count === 4) {
+					throw new Error ('Something wrong');
+				}
+			}),
+			take(5),
+			finalize(() => console.log('Final at 5th value')),
+			catchError((e) => (console.log('Error: ', e), EMPTY))
+		)
+		.subscribe((count) => console.log(`Clicked ${count} times`));
+	</script>
+</body>
+</html>

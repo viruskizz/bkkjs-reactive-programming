@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Promise vs Observable</title>
+	<script src="https://cdn.jsdelivr.net/npm/rxjs@7.8.1/dist/bundles/rxjs.umd.min.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="js/vs.js" defer></script>
+</head>
+<body class="bg-slate-950 text-slate-200">
+	<div class="container mx-auto">
+		<h1 class="text-3xl text-yellow-400 font-bold underline text-center mt-2">Promise vs Observable</h1>
+		<!-- Execution -->
+		<div id="execution">
+			<h2 class="text-xl text-blue-500 font-bold underline text-center my-2">Execution</h2>
+			<div class="flex flex-row justify-around mb-4">
+				<div class="flex-1 flex-col">
+					<h3 class="text-xl font-bold text-center mb-2">Promise</h3>
+					<div id="pm-list-exec" class="w-full mx-8"></div>
+				</div>
+				<div class="flex-1 flex-col">
+					<h3 class="text-xl font-bold text-center mb-2">Observable</h3>
+					<div id="rx-list-exec" class="w-full mx-8"></div>
+				</div>
+			</div>
+		</div>
+		<!-- Single vs Mulitple values -->
+		<div id="single-mulitple">
+			<h2 class="text-xl text-blue-500 font-bold underline text-center my-2">Single vs Multiple values</h2>
+			<div class="flex flex-row justify-around mb-4">
+				<div class="flex-1 flex-col">
+					<h3 class="text-xl font-bold text-center mb-2">Promise</h3>
+					<div id="pm-list-values" class="w-full mx-8"></div>
+				</div>
+				<div class="flex-1 flex-col">
+					<h3 class="text-xl font-bold text-center mb-2">Observable</h3>
+					<div id="rx-list-values" class="w-full mx-8"></div>
+				</div>
+			</div>
+		</div>
+		<!-- Operators -->
+		<div id="operator">
+			<h2 class="text-xl text-blue-500 font-bold underline text-center my-2">Operators</h2>
+			<div class="flex flex-row justify-around mb-4">
+				<div class="flex-1 flex-col">
+					<h3 class="text-xl font-bold text-center mb-2">Promise</h3>
+					<div id="pm-list-opt" class="w-full mx-8"></div>
+				</div>
+				<div class="flex-1 flex-col">
+					<h3 class="text-xl font-bold text-center mb-2">Observable</h3>
+					<div id="rx-list-opt" class="w-full mx-8"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

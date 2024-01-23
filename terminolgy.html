@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Introduction Reactive Programing</title>
+	<script src="https://cdn.jsdelivr.net/npm/rxjs@7.8.1/dist/bundles/rxjs.umd.min.js"></script>
+</head>
+<body>
+	<script>
+	const { interval, map } = rxjs;
+	const scheduler = interval(1000); // Observable
+	const observer = (v) => console.log(v); 
+	const subscription = scheduler.pipe(
+		map(v => v * 2), // Operator
+	).subscribe(observer);
+	</script>
+</body>
+</html>
