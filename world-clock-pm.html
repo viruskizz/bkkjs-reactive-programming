@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>World Clock Rx</title>
+	<script src="https://cdn.jsdelivr.net/npm/rxjs@7.8.1/dist/bundles/rxjs.umd.min.js"></script>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="js/world-clock-rx.js" defer></script>
+</head>
+<body class="bg-slate-950 text-slate-200">
+	<div class="container mx-auto">
+		<h1 class="text-3xl text-yellow-400 font-bold underline text-center mt-2">World Clock Application</h1>
+		<div class="flex flex-row justify-around mt-4">
+			<div class="flex flex-col items-center">
+				<h2 class="text-xl font-bold">Japan</h2>
+				<p class="text-sm">GMT+9</h3>
+				<p id="japan" class="text-lg">
+					00:00:00
+				</p>
+			</div>
+			<div class="flex flex-col items-center">
+				<h2 class="text-xl font-bold">Greenwich</h2>
+				<p class="text-sm">GMT</h3>
+				<p id="greenwich" class="text-lg">
+					00:00:00
+				</p>
+			</div>
+			<div class="flex flex-col items-center">
+				<h2 class="text-xl font-bold">Bangkok</h2>
+				<p class="text-sm">GMT+7</h3>
+				<p id="bangkok" class="text-lg">
+					00:00:00
+				</p>
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
