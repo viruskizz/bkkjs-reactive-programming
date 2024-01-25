@@ -21,8 +21,9 @@ Run `worldclock/rx.html`
 
 ## Presentation Link
 
-[canva]
+<a href="https://www.canva.com/design/DAF6bm3NBkE/RjTRj9ldRMinL-oV0oCYXw/view?utm_content=DAF6bm3NBkE&utm_campaign=designshare&utm_medium=link&utm_source=editor">
+canva
+</a>
 
 <!-- Link -->
 [code]: (worldclock/rx.html)
-[canva]: (https://www.canva.com/design/DAF6bm3NBkE/RjTRj9ldRMinL-oV0oCYXw/view?utm_content=DAF6bm3NBkE&utm_campaign=designshare&utm_medium=link&utm_source=editor)
